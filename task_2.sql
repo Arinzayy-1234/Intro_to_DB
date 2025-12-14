@@ -24,9 +24,9 @@ CREATE TABLE CUSTOMERS (
 -- Keys: book_id (Primary Key), author_id (Foreign Key referencing Authors)
 CREATE TABLE BOOKS (
     BOOK_ID INT PRIMARY KEY,
-    TITLE VARCHAR(130),
+    title VARCHAR(130),       -- <-- MUST be all lowercase "title"
     AUTHOR_ID INT,
-    PRICE DOUBLE,
+    price DOUBLE,             -- <-- MUST be all lowercase "price"
     PUBLICATION_DATE DATE,
     -- Foreign Key Constraint: Links to the Authors table
     FOREIGN KEY (AUTHOR_ID) REFERENCES AUTHORS(AUTHOR_ID)
