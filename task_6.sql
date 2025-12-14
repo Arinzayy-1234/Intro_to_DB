@@ -4,7 +4,7 @@
 USE alx_book_store;
 
 -- Inserts multiple rows of data into the CUSTOMERS table using a single statement.
--- NOTE: The address for ID 2 now includes the required double space.
+-- NOTE: All three addresses now include the required double space "  Ave."
 INSERT INTO customer (
     customer_id,
     customer_name,
@@ -12,6 +12,6 @@ INSERT INTO customer (
     address
 )
 VALUES 
-    (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness  Ave.'), -- <-- Corrected to double space
-    (3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness Ave.'),
-    (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.');
+    (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness  Ave.'), -- Double space here
+    (3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness  Ave.'),  -- Double space here
+    (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness  Ave.'); -- Double space here
