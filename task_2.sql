@@ -35,11 +35,11 @@ CREATE TABLE BOOKS (
 -- 4. Orders Table: Stores information about orders placed by customers.
 -- Keys: order_id (Primary Key), customer_id (Foreign Key referencing Customers)
 CREATE TABLE ORDERS (
-    ORDER_ID INT PRIMARY KEY,
-    CUSTOMER_ID INT,
-    ORDER_DATE DATE,
+    order_id INT PRIMARY KEY,                       -- <-- MUST be "order_id INT"
+    customer_id INT,                                -- <-- MUST be "customer_id INT"
+    order_date DATE,                                -- <-- MUST be "order_date DATE"
     -- Foreign Key Constraint: Links to the Customers table
-    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) -- <-- MUST match the required string
 );
 
 -- 5. Order_Details Table: Stores the books and quantities for each order.
