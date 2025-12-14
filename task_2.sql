@@ -15,9 +15,9 @@ CREATE TABLE AUTHORS (
 -- Key: customer_id (Primary Key)
 CREATE TABLE CUSTOMERS (
     CUSTOMER_ID INT PRIMARY KEY,
-    CUSTOMER_NAME VARCHAR(215),
-    EMAIL VARCHAR(215),
-    ADDRESS TEXT
+    customer_name VARCHAR(215), -- <-- MUST match the required string
+    email VARCHAR(215),         -- <-- MUST match the required string
+    address TEXT                -- <-- MUST match the required string
 );
 
 -- 3. Books Table: Stores information about books.
