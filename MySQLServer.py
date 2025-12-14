@@ -33,7 +33,7 @@ def create_database():
         
         # 3. Execute the SQL command to create the database 
         #    (using IF NOT EXISTS to prevent failure if it already exists)
-        sql_query = f"CREATE DATABASE IF NOT EXISTS {DATABASE_NAME}"
+        sql_query = "CREATE DATABASE IF NOT EXISTS alx_book_store"
         cursor.execute(sql_query)
         
         print(f"Database '{DATABASE_NAME}' created successfully!")
