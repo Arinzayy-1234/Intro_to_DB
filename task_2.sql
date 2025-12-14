@@ -8,7 +8,7 @@ USE ALX_BOOK_STORE;
 -- Key: author_id (Primary Key)
 CREATE TABLE AUTHORS (
     AUTHOR_ID INT PRIMARY KEY,
-    AUTHOR_NAME VARCHAR(215)
+    author_name VARCHAR(215)
 );
 
 -- 2. Customers Table: Stores information about customers.
