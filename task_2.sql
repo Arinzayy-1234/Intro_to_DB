@@ -47,10 +47,12 @@ CREATE TABLE ORDERS (
 CREATE TABLE ORDER_DETAILS (
     ORDERDETAILID INT PRIMARY KEY,
     ORDER_ID INT,
-    BOOK_ID INT,
-    QUANTITY DOUBLE,
+    book_id INT,                                    -- <-- MUST be "book_id INT"
+    quantity DOUBLE,                                -- <-- MUST be "quantity DOUBLE"
+    
     -- Foreign Key Constraint 1: Links to the Orders table
-    FOREIGN KEY (ORDER_ID) REFERENCES ORDERS(ORDER_ID),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),  -- <-- MUST match the required string
+    
     -- Foreign Key Constraint 2: Links to the Books table
-    FOREIGN KEY (BOOK_ID) REFERENCES BOOKS(BOOK_ID)
+    FOREIGN KEY (book_id) REFERENCES Books(book_id)      -- <-- MUST match the required string
 );
